@@ -62,7 +62,7 @@ export const Footer = () => {
   const socialLinks = [
     {
       icon: Instagram,
-      href: "https://www.instagram.com/markyoureventz/",
+      href: "https://www.instagram.com/weddingsbytrixietales/?hl=en",
       label: "Instagram",
     },
     {

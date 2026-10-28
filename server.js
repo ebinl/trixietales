@@ -427,7 +427,7 @@ function injectSEO(html, reqPath) {
     },
     "sameAs": [
       "https://share.google/fz4Pz3hsFivsuZIva",
-      "https://www.instagram.com/trixietales",
+      "https://www.instagram.com/weddingsbytrixietales/?hl=en",
       "https://www.facebook.com/trixietales"
     ],
     "openingHoursSpecification": [

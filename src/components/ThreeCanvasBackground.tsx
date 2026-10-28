@@ -67,11 +67,11 @@ export const ThreeCanvasBackground = () => {
     const logoHeight = 3.84;
     const logoGeo = new THREE.PlaneGeometry(logoWidth, logoHeight);
 
-    // Front Face with high-quality metallic finish
+    // Front Face with high-quality metallic finish (25% reduced opacity: 0.42 -> 0.315)
     const logoMatFront = new THREE.MeshStandardMaterial({
       map: logoTexture,
       transparent: true,
-      opacity: 0.42,
+      opacity: 0.315,
       roughness: 0.2,
       metalness: 0.7,
       side: THREE.DoubleSide,
@@ -86,14 +86,14 @@ export const ThreeCanvasBackground = () => {
     logoMeshBack.position.z = -0.04;
     logoGroup.add(logoMeshBack);
 
-    // Orbiting 3D Gold Rings
+    // Orbiting 3D Gold Rings (25% reduced opacity: 0.35 -> 0.26)
     const ringGeo1 = new THREE.TorusGeometry(3.2, 0.025, 16, 120);
     const ringMat = new THREE.MeshStandardMaterial({
       color: 0xe6b76c,
       metalness: 0.95,
       roughness: 0.15,
       transparent: true,
-      opacity: 0.35,
+      opacity: 0.26,
     });
     const ring1 = new THREE.Mesh(ringGeo1, ringMat);
     logoGroup.add(ring1);
@@ -102,7 +102,7 @@ export const ThreeCanvasBackground = () => {
     const ring2 = new THREE.Mesh(ringGeo2, ringMat);
     logoGroup.add(ring2);
 
-    // Ambient floating golden dust particles
+    // Ambient floating golden dust particles (25% reduced opacity: 0.35 -> 0.26)
     const particleCount = 50;
     const particleGeo = new THREE.BufferGeometry();
     const particlePositions = new Float32Array(particleCount * 3);
@@ -119,7 +119,7 @@ export const ThreeCanvasBackground = () => {
       color: 0xe6b76c,
       size: 0.07,
       transparent: true,
-      opacity: 0.35,
+      opacity: 0.26,
     });
     const particleSystem = new THREE.Points(particleGeo, particleMat);
     scene.add(particleSystem);
@@ -144,10 +144,10 @@ export const ThreeCanvasBackground = () => {
       animationId = requestAnimationFrame(animate);
       const elapsedTime = clock.getElapsedTime();
 
-      // Continuous majestic 3D rotation
-      logoGroup.rotation.y += 0.009;
-      ring1.rotation.z += 0.005;
-      ring2.rotation.z -= 0.004;
+      // Continuous majestic 3D rotation (moderated speed for calm luxury feel)
+      logoGroup.rotation.y += 0.0055;
+      ring1.rotation.z += 0.0032;
+      ring2.rotation.z -= 0.0026;
       ring2.rotation.x = Math.sin(elapsedTime * 0.4) * 0.3;
 
       // Subtle float motion

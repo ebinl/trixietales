@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import HeroCarousel, { StudioStatsBar } from "@/components/HeroCarousel";
 import Founder from "@/components/Founder";
 import MobileBottomNav from "@/components/MobileBottomNav";
-import ThreeCanvasBackground from "@/components/ThreeCanvasBackground";
 
 const Courses = lazy(() => import("@/components/Courses"));
 const Portfolio = lazy(() => import("@/components/Portfolio"));
@@ -19,10 +18,8 @@ const OurTeam = lazy(() => import("@/components/OurTeam"));
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      {/* Enhanced Photography-inspired background with 3D Rotating Logo */}
+      {/* Enhanced Photography-inspired background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none origin-center will-change-transform transform-gpu">
-        {/* 3D Rotating Animated Logo Background */}
-        <ThreeCanvasBackground />
 
         {/* Large gradient orbs with more movement */}
         <div className="absolute top-1/4 left-1/4 w-[550px] h-[550px] bg-gradient-to-br from-primary/15 to-accent/15 dark:from-primary/20 dark:to-accent/20 rounded-full blur-3xl animate-floatLarge transform-gpu will-change-transform" />

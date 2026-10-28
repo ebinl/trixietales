@@ -14,7 +14,7 @@ const Founder = () => {
   const { ref, isVisible } = useScrollReveal();
 
   const socialLinks = [
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/markyoureventz/", color: "hover:text-pink-500" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/weddingsbytrixietales/?hl=en", color: "hover:text-pink-500" },
     { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/MARKHANDEYA/?locale=hi_IN&_rdr", color: "hover:text-blue-500" },
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/markhandeya-m-v-09a110192/?originalSubdomain=in", color: "hover:text-blue-600" },
     { name: "Twitter", icon: Twitter, href: "https://x.com/Callme_Krack", color: "hover:text-sky-400" }
