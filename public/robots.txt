@@ -1,0 +1,7 @@
+# Trixietales Photography & Films Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/dashboard
+
+Sitemap: https://trixietales.com/sitemap.xml
