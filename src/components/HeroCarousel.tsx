@@ -33,12 +33,6 @@ export const bannerImages = [
     subtitle: "Fleeting Whispers Immortalized Forever",
     location: "Belathur Studio & Outdoor Sanctuaries",
   },
-  {
-    url: "/banner/4.jpeg",
-    title: "Timeless Family Legacies",
-    subtitle: "Generations of Joy, Sacred Rituals & Grace",
-    location: "South India & Palatial Venues",
-  },
 ];
 
 export const STATS = [

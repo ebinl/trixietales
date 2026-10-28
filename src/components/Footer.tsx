@@ -87,7 +87,7 @@ export const Footer = () => {
       {/* Decorative subtle ambient glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-[#e6b76c]/5 blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-16 pb-40 min-[1100px]:pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand & Studio Information (2 Columns) */}
           <div className="lg:col-span-2 space-y-5">
@@ -228,17 +228,17 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Credits & Copyright */}
-        <div className="pt-8 mt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
-          <p>
+        <div className="pt-8 mt-10 border-t border-white/15 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-400 gap-4 relative z-20">
+          <p className="text-center md:text-left">
             &copy; {currentYear} {BRAND_NAME}. All rights reserved.
           </p>
-          <p className="flex items-center gap-1 text-zinc-400">
+          <p className="flex items-center gap-1.5 text-zinc-300 font-medium">
             <span>Designed by</span>
             <a
               href="https://ebin-portfolio-rouge.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#e6b76c] hover:underline font-bold transition-colors"
+              className="text-[#e6b76c] hover:underline font-bold transition-colors tracking-wide"
             >
               Ebin Shaji
             </a>
