@@ -67,6 +67,7 @@ export default {
         sans: ['"Plus Jakarta Sans"', 'Outfit', 'Inter', 'sans-serif'],
         serif: ['Cinzel', 'serif'],
         cinzel: ['Cinzel', 'serif'],
+        bevorden: ['Bevorden', 'Cinzel', 'serif'],
       },
       keyframes: {
         "accordion-down": {

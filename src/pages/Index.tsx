@@ -242,35 +242,55 @@ const Index = () => {
       <Header />
       <HeroCarousel />
       <StudioStatsBar />
-      <Founder />
       <Suspense fallback={<div className="min-h-screen animate-pulse bg-muted/20" />}>
-        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '1000px' }}>
-          <Courses />
-        </div>
+        {/* 1. Portfolio */}
         <div style={{ contentVisibility: 'auto', containIntrinsicSize: '1200px' }}>
           <Portfolio />
         </div>
-        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
-          <Collaborations />
-        </div>
-        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
-          <Prints3DSection />
-        </div>
-        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
-          <Prints />
-        </div>
-        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' }}>
-          <Testimonials />
-        </div>
+
+        {/* 2. Creative Director (Founder) */}
+        <Founder />
+
+        {/* 3. Our Team */}
         <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
           <OurTeam />
         </div>
+
+        {/* 4. Client Reviews (Testimonials) */}
+        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' }}>
+          <Testimonials />
+        </div>
+
+        {/* 5. Mastery & Mentorship (Courses) */}
+        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '1000px' }}>
+          <Courses />
+        </div>
+
+        {/* 6. Collaborations */}
+        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
+          <Collaborations />
+        </div>
+
+        {/* 7. 3D Art Studio */}
+        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
+          <Prints3DSection />
+        </div>
+
+        {/* 8. Heritage Print Service */}
+        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
+          <Prints />
+        </div>
+
+        {/* 9. FAQ */}
         <div style={{ contentVisibility: 'auto', containIntrinsicSize: '400px' }}>
           <Faq />
         </div>
+
+        {/* 10. Connect With Us (Contact) */}
         <div style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' }}>
           <Contact />
         </div>
+
         <Footer />
       </Suspense>
       <MobileBottomNav />

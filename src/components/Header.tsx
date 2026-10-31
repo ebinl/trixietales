@@ -74,7 +74,7 @@ export const Header = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-6 md:gap-10 xl:gap-14">
             {/* Brand Logo & Name */}
             <Link to="/" className="flex items-center gap-3 group shrink-0">
               <div className="relative">
@@ -86,18 +86,18 @@ export const Header = () => {
                 />
                 <span className="absolute -inset-1 rounded-full bg-[#e6b76c]/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-lg md:text-2xl font-bold tracking-tight text-white group-hover:text-[#e6b76c] transition-colors leading-none">
+              <div className="flex flex-col justify-center gap-1.5 md:gap-2">
+                <span className="font-bevorden text-xl md:text-2xl lg:text-3xl font-normal tracking-wide text-white group-hover:text-[#e6b76c] transition-colors leading-tight">
                   Trixietales
                 </span>
-                <span className="text-[9px] md:text-[10px] tracking-[0.25em] text-[#e6b76c] uppercase font-bold mt-1">
+                <span className="text-[9px] md:text-[10px] tracking-[0.28em] text-[#e6b76c] uppercase font-bold leading-normal">
                   Photography & Films
                 </span>
               </div>
             </Link>
 
-            {/* Desktop Navigation for screens >= 1100px */}
-            <nav className="hidden min-[1100px]:flex items-center gap-6 xl:gap-8">
+            {/* Desktop Navigation for screens >= 1200px */}
+            <nav className="hidden min-[1200px]:flex items-center gap-5 xl:gap-7 ml-auto">
               {NAV_LINKS.map((link) => {
                 const isActive =
                   location.pathname === link.href ||
@@ -106,7 +106,7 @@ export const Header = () => {
                   <Link
                     key={link.name}
                     to={link.href}
-                    className={`relative text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap transition-colors duration-200 py-1 ${
+                    className={`relative text-sm xl:text-base font-semibold tracking-wide whitespace-nowrap transition-colors duration-200 py-1.5 ${
                       isActive
                         ? "text-[#e6b76c]"
                         : "text-zinc-300 hover:text-white"
@@ -123,29 +123,29 @@ export const Header = () => {
               {/* Book a Session CTA */}
               <Button
                 onClick={openBooking}
-                className="bg-gradient-to-r from-[#e6b76c] to-[#d4a04e] hover:from-[#d4a04e] hover:to-[#c28e3b] text-black font-black text-xs uppercase tracking-wider rounded-full px-5 h-10 shadow-lg shadow-[#e6b76c]/20 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 whitespace-nowrap"
+                className="bg-[#dca85b] hover:bg-[#c99547] text-white font-extrabold text-xs uppercase tracking-wider rounded-full px-5 h-10 shadow-lg shadow-[#dca85b]/20 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 whitespace-nowrap shrink-0 border-0 cursor-pointer ml-1"
               >
-                <Calendar className="w-3.5 h-3.5" />
-                <span>Book a Session</span>
+                <Calendar className="w-3.5 h-3.5 text-white stroke-[2.5]" />
+                <span className="text-white">Book a Session</span>
               </Button>
             </nav>
 
-            {/* Mobile / Tablet Controls (< 1100px) */}
-            <div className="flex min-[1100px]:hidden items-center gap-2">
+            {/* Mobile / Tablet Controls (< 1200px) */}
+            <div className="flex min-[1200px]:hidden items-center gap-2 ml-auto">
               <Button
                 onClick={openBooking}
                 size="sm"
-                className="bg-gradient-to-r from-[#e6b76c] to-[#d4a04e] text-black font-black text-[11px] uppercase tracking-wider rounded-full px-3.5 h-8 shadow-md flex items-center gap-1.5"
+                className="bg-[#dca85b] hover:bg-[#c99547] text-white font-extrabold text-[11px] uppercase tracking-wider rounded-full px-3.5 h-8 shadow-md flex items-center gap-1.5 cursor-pointer"
               >
-                <Calendar className="w-3 h-3" />
-                <span>Book</span>
+                <Calendar className="w-3 h-3 text-white stroke-[2.5]" />
+                <span className="text-white">Book</span>
               </Button>
 
               {/* Drawer Toggle Button */}
               <button
                 onClick={() => setIsDrawerOpen(!isDrawerOpen)}
                 aria-label="Open navigation menu"
-                className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white transition-colors"
+                className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white transition-colors cursor-pointer"
               >
                 {isDrawerOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -154,9 +154,9 @@ export const Header = () => {
         </div>
       </header>
 
-      {/* Slide-out Mobile Navigation Drawer (< 1100px) */}
+      {/* Slide-out Mobile Navigation Drawer (< 1200px) */}
       {isDrawerOpen && (
-        <div className="fixed inset-0 z-[999] min-[1100px]:hidden">
+        <div className="fixed inset-0 z-[999] min-[1200px]:hidden">
           {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity"
@@ -169,9 +169,9 @@ export const Header = () => {
             <div className="p-6 border-b border-white/10 flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
-                <div>
-                  <h3 className="font-serif font-bold text-white text-base">Trixietales</h3>
-                  <p className="text-[9px] uppercase tracking-widest text-[#e6b76c]">Bengaluru, Whitefield</p>
+                <div className="flex flex-col gap-1">
+                  <h3 className="font-bevorden text-lg text-white leading-tight">Trixietales</h3>
+                  <p className="text-[9px] uppercase tracking-widest text-[#e6b76c] leading-normal">Bengaluru, Whitefield</p>
                 </div>
               </div>
               <button
@@ -222,10 +222,10 @@ export const Header = () => {
                   setIsDrawerOpen(false);
                   openBooking();
                 }}
-                className="w-full h-12 bg-gradient-to-r from-[#e6b76c] to-[#d4a04e] text-black font-black text-xs uppercase tracking-widest rounded-xl shadow-lg flex items-center justify-center gap-2"
+                className="w-full h-12 bg-gradient-to-r from-[#e6b76c] to-[#d4a04e] text-white font-black text-xs uppercase tracking-widest rounded-xl shadow-lg flex items-center justify-center gap-2"
               >
-                <Calendar className="w-4 h-4" />
-                Book Session Now
+                <Calendar className="w-4 h-4 text-white stroke-[2.5]" />
+                <span className="text-white">Book Session Now</span>
               </Button>
 
               <div className="grid grid-cols-2 gap-2 pt-1">

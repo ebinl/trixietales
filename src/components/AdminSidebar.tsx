@@ -25,6 +25,7 @@ import {
     Settings,
     Palette,
     Calendar,
+    Image as ImageIcon,
 } from "lucide-react";
 
 export function AdminSidebar({
@@ -46,6 +47,7 @@ export function AdminSidebar({
         videos: number;
         services: number;
         bookings: number;
+        banners?: number;
     };
 }) {
     const menuItems = [
@@ -102,6 +104,12 @@ export function AdminSidebar({
         {
             title: "Content",
             items: [
+                {
+                    title: "Hero Banner",
+                    icon: ImageIcon,
+                    id: "hero-banner",
+                    count: counts.banners,
+                },
                 {
                     title: "Ratings",
                     icon: Star,

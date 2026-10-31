@@ -97,11 +97,11 @@ export const Footer = () => {
                 alt="Trixietales"
                 className="w-10 h-10 object-contain group-hover:scale-105 transition-transform"
               />
-              <div>
-                <span className="text-2xl font-bold font-serif text-white tracking-tight block">
+              <div className="flex flex-col gap-1.5 md:gap-2">
+                <span className="text-2xl md:text-3xl font-bevorden text-white tracking-wide block leading-tight">
                   Trixietales
                 </span>
-                <span className="text-[10px] text-[#e6b76c] font-bold uppercase tracking-[0.2em] block">
+                <span className="text-[10px] text-[#e6b76c] font-bold uppercase tracking-[0.25em] block leading-normal">
                   Photography & Films
                 </span>
               </div>

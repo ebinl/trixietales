@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== BRAND CUSTOM DISPLAY FONT: BEVORDEN ===== */
+@font-face {
+  font-family: "Bevorden";
+  src: url("https://db.onlinewebfonts.com/t/819d9b142022f773b483c74a2224faca.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/819d9b142022f773b483c74a2224faca.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/819d9b142022f773b483c74a2224faca.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* 
   ✨ LUXURY METALLIC GOLD DESIGN SYSTEM
   Font: Eirene Sans
