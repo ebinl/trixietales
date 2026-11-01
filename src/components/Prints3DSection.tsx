@@ -45,24 +45,24 @@ export const FORMAT_SAMPLES: Record<
     { id: "sample_frame_3", label: "Luxury Bridal Heirloom", url: "/images/protfolio images/Wedding/DSC09507_Conv.webp", badge: "Gallery Matte" },
     { id: "sample_frame_4", label: "Sunset Romance", url: "/images/protfolio images/Pre-Wedding/DSC00540_Conv.webp", badge: "Archival Luster" },
     { id: "sample_frame_5", label: "Grand Mandap Moments", url: "/images/protfolio images/Wedding/DSC04407_Conv.webp", badge: "Masterpiece" },
-    { id: "sample_frame_6", label: "Heritage Couple", url: "/banner/3.jpeg", badge: "Classic Finish" },
+    { id: "sample_frame_6", label: "Heritage Couple", url: "/banner/Sunset_Silhouette.jpeg", badge: "Classic Finish" },
   ],
   calendar: [
     { id: "sample_cal_1", label: "Desk Couple Keepsake", url: "/images/protfolio images/Pre-Wedding/DSC00744_Conv.webp", badge: "Gold Wire Stand" },
     { id: "sample_cal_2", label: "Wedding Bliss 12-Month", url: "/images/protfolio images/Wedding/ANZ03064_Conv.webp", badge: "Artisan Cotton" },
     { id: "sample_cal_3", label: "Pre-Wedding Escapade", url: "/images/protfolio images/Pre-Wedding/DSC00886_Conv.webp", badge: "Desk Art" },
-    { id: "sample_cal_4", label: "Golden Hour Couple", url: "/banner/2.jpeg", badge: "Modern Layout" },
+    { id: "sample_cal_4", label: "Golden Hour Couple", url: "/banner/DSC00885.jpeg", badge: "Modern Layout" },
     { id: "sample_cal_5", label: "Romantic Sunset Embrace", url: "/images/protfolio images/Pre-Wedding/DSC00075_Conv.webp", badge: "Heirloom Edition" },
   ],
   magazine: [
     { id: "sample_mag_1", label: "Editorial Wedding Cover", url: "/images/protfolio images/Wedding/DSC04429_Conv.webp", badge: "Vogue Style" },
     { id: "sample_mag_2", label: "Couture Bride Feature", url: "/images/protfolio images/Wedding/DSC09356_Conv.webp", badge: "Glossy Spread" },
     { id: "sample_mag_3", label: "High-Fashion Romance", url: "/images/protfolio images/Pre-Wedding/DSC00225_Conv.webp", badge: "Collector's Issue" },
-    { id: "sample_mag_4", label: "Cinematic Love Story", url: "/banner/1.jpeg", badge: "Coffee Table" },
+    { id: "sample_mag_4", label: "Cinematic Love Story", url: "/banner/Balcony_Romance.jpeg", badge: "Coffee Table" },
     { id: "sample_mag_5", label: "Royal Reception Feature", url: "/images/protfolio images/Wedding/DSC04775_Conv.webp", badge: "Spotlight" },
   ],
   album: [
-    { id: "sample_album_1", label: "Royal Heritage Vows", url: "/banner/1.jpeg", badge: "Leather Lay-Flat" },
+    { id: "sample_album_1", label: "Royal Heritage Vows", url: "/banner/DSC09578.jpeg", badge: "Leather Lay-Flat" },
     { id: "sample_album_2", label: "Candid Couple Heirloom", url: "/images/protfolio images/Wedding/DSC09495_Conv.webp", badge: "Gold Foil Spine" },
     { id: "sample_album_3", label: "Traditional Rituals", url: "/images/protfolio images/Wedding/_DSC2438_Conv.webp", badge: "Panoramic Spread" },
     { id: "sample_album_4", label: "Hillside Sunset Vows", url: "/images/protfolio images/Pre-Wedding/DSC00881_Conv.webp", badge: "Silk Ribbon" },
@@ -641,9 +641,21 @@ export const Prints3DSection = () => {
       root.remove(child);
     }
 
-    const textureLoader = new THREE.TextureLoader();
-    const photoTexture = userImageUrl ? textureLoader.load(userImageUrl) : null;
-    if (photoTexture) {
+    let photoTexture: THREE.Texture | null = null;
+    if (loadedImage && loadedImage.complete && loadedImage.naturalWidth > 0) {
+      const frameCanvas = document.createElement("canvas");
+      frameCanvas.width = 900;
+      frameCanvas.height = 1200;
+      const fCtx = frameCanvas.getContext("2d");
+      if (fCtx) {
+        drawImageProp(fCtx, loadedImage, 0, 0, 900, 1200);
+        photoTexture = new THREE.CanvasTexture(frameCanvas);
+        photoTexture.colorSpace = THREE.SRGBColorSpace;
+        photoTexture.needsUpdate = true;
+      }
+    } else if (userImageUrl) {
+      const textureLoader = new THREE.TextureLoader();
+      photoTexture = textureLoader.load(userImageUrl);
       photoTexture.colorSpace = THREE.SRGBColorSpace;
     }
 

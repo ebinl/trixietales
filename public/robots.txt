@@ -5,3 +5,4 @@ Disallow: /admin
 Disallow: /admin/dashboard
 
 Sitemap: https://trixietales.com/sitemap.xml
+Sitemap: https://trixietales.com/seo.xml

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seoConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <studioProfile>
+    <name>Trixietales Photography &amp; Films</name>
+    <founder>Markhandeya</founder>
+    <tagline>Best Photography Studio in Whitefield, Bangalore | Luxury Wedding Photography &amp; Cinematic Films</tagline>
+    <website>https://trixietales.com</website>
+    <phone>+918618223659</phone>
+    <email>hello@trixietales.com</email>
+    <address>
+      <street>No 3/4, Near Hanuman Temple, Maruthi Layout, Belathur</street>
+      <locality>Whitefield</locality>
+      <city>Bengaluru</city>
+      <state>Karnataka</state>
+      <postalCode>560067</postalCode>
+      <country>India</country>
+      <latitude>13.0106456</latitude>
+      <longitude>77.7554901</longitude>
+    </address>
+  </studioProfile>
+
+  <!-- Primary & Local Search Keywords -->
+  <keywords>
+    <!-- High-Intent Local Studio Keywords -->
+    <keyword priority="1.0" category="local-intent">photography near me studio</keyword>
+    <keyword priority="1.0" category="local-intent">best studio in whitefield bangalore</keyword>
+    <keyword priority="1.0" category="local-intent">photographer near me studio whitefield bangalore</keyword>
+    <keyword priority="1.0" category="local-intent">best photography studio in whitefield bangalore</keyword>
+    <keyword priority="1.0" category="local-intent">photo studio near me whitefield</keyword>
+    <keyword priority="1.0" category="local-intent">photography studio near me</keyword>
+    <keyword priority="1.0" category="local-intent">best photo studio in whitefield</keyword>
+    <keyword priority="0.95" category="local-intent">professional photo studio in whitefield bangalore</keyword>
+    <keyword priority="0.95" category="local-intent">top rated photography studio in bangalore</keyword>
+    <keyword priority="0.95" category="local-intent">photoshoot studio near me whitefield</keyword>
+    <keyword priority="0.95" category="local-intent">belathur photo studio whitefield</keyword>
+    <keyword priority="0.95" category="local-intent">indoor photoshoot studio in whitefield bangalore</keyword>
+
+    <!-- Wedding & Pre-Wedding Keywords -->
+    <keyword priority="1.0" category="wedding">best wedding photographers in whitefield bangalore</keyword>
+    <keyword priority="1.0" category="wedding">luxury wedding photography bangalore</keyword>
+    <keyword priority="0.95" category="wedding">candid wedding photography studio near me</keyword>
+    <keyword priority="0.95" category="wedding">pre wedding photoshoot studio in whitefield bangalore</keyword>
+    <keyword priority="0.95" category="wedding">cinematic wedding films bangalore</keyword>
+    <keyword priority="0.90" category="wedding">engagement photographers in whitefield</keyword>
+    <keyword priority="0.90" category="wedding">haldi mehandi sangeeth photography bangalore</keyword>
+    <keyword priority="0.90" category="wedding">destination wedding photographers in bangalore</keyword>
+
+    <!-- Portrait, Family, Maternity & Baby Shoot Keywords -->
+    <keyword priority="0.90" category="family-events">maternity photoshoot studio in whitefield bangalore</keyword>
+    <keyword priority="0.90" category="family-events">baby shoot studio near me whitefield</keyword>
+    <keyword priority="0.90" category="family-events">newborn photography studio whitefield bangalore</keyword>
+    <keyword priority="0.85" category="family-events">naming ceremony photography whitefield</keyword>
+    <keyword priority="0.85" category="family-events">annaprashna photoshoot bangalore</keyword>
+    <keyword priority="0.85" category="family-events">half saree ceremony photography bangalore</keyword>
+    <keyword priority="0.85" category="family-events">birthday party photographers in whitefield bangalore</keyword>
+
+    <!-- Commercial, Corporate & Prints Keywords -->
+    <keyword priority="0.85" category="commercial">corporate shoots studio in whitefield bangalore</keyword>
+    <keyword priority="0.85" category="commercial">product photography studio near me bangalore</keyword>
+    <keyword priority="0.85" category="commercial">industrial photography and films bangalore</keyword>
+    <keyword priority="0.85" category="prints">custom photo frames and wedding albums whitefield bangalore</keyword>
+    <keyword priority="0.85" category="education">photography courses and masterclass in whitefield bangalore</keyword>
+  </keywords>
+
+  <!-- Local Areas Served in Bengaluru -->
+  <serviceAreas>
+    <area>Whitefield, Bengaluru</area>
+    <area>Belathur, Whitefield</area>
+    <area>ITPL &amp; EPIP Zone, Whitefield</area>
+    <area>Kadugodi, Bengaluru</area>
+    <area>Hoodi, Bengaluru</area>
+    <area>Hope Farm Junction, Whitefield</area>
+    <area>Varthur &amp; Gunjur, Bengaluru</area>
+    <area>Marathahalli, Bengaluru</area>
+    <area>Brookefield &amp; AECS Layout, Bengaluru</area>
+    <area>KR Puram, Bengaluru</area>
+    <area>Indiranagar, Bengaluru</area>
+    <area>Koramangala, Bengaluru</area>
+    <area>Sarjapur Road, Bengaluru</area>
+    <area>HSR Layout, Bengaluru</area>
+    <area>Electronic City, Bengaluru</area>
+  </serviceAreas>
+
+  <!-- Landing Pages & Target SEO Metadata -->
+  <pages>
+    <page url="https://trixietales.com/" priority="1.0">
+      <title>Trixietales | Best Studio in Whitefield Bangalore | Photography Near Me Studio</title>
+      <description>Looking for photography near me studio or the best studio in Whitefield Bangalore? Trixietales Photography &amp; Films by Markhandeya offers luxury wedding photography, pre-wedding shoots, baby shoots, and cinematic films.</description>
+      <focusKeywords>photography near me studio, best studio in whitefield bangalore, wedding photographers whitefield</focusKeywords>
+    </page>
+    <page url="https://trixietales.com/portfolio" priority="0.95">
+      <title>Wedding, Pre-Wedding &amp; Studio Portfolio | Best Studio in Whitefield Bangalore</title>
+      <description>Explore our portfolio of wedding photography, pre-wedding shoots, engagement, baby shower, babyshoot, and corporate shoots at the best photography studio in Whitefield, Bangalore.</description>
+      <focusKeywords>wedding portfolio bangalore, pre wedding shoot whitefield, photography near me studio</focusKeywords>
+    </page>
+    <page url="https://trixietales.com/prints" priority="0.90">
+      <title>Custom 3D Frames, Luxury Wedding Albums &amp; Fine-Art Prints | Whitefield Studio</title>
+      <description>Preview your photos in 3D museum wood frames, lay-flat leather wedding albums, editorial magazines, and desk calendars at Trixietales Studio, Whitefield, Bangalore.</description>
+      <focusKeywords>custom photo frames whitefield, luxury wedding albums bangalore, photo printing studio near me</focusKeywords>
+    </page>
+    <page url="https://trixietales.com/experience" priority="0.85">
+      <title>Markhandeya | International Award-Winning Photographer &amp; Filmmaker in Whitefield</title>
+      <description>Meet Markhandeya and experience world-class Sony Cinema Line production at the best photography studio in Whitefield, Bangalore.</description>
+      <focusKeywords>markhandeya photographer, best wedding filmmaker bangalore, best studio in whitefield bangalore</focusKeywords>
+    </page>
+    <page url="https://trixietales.com/education" priority="0.85">
+      <title>Photography &amp; Filmmaking Courses in Whitefield, Bangalore | Trixietales Academy</title>
+      <description>Learn professional wedding photography, lighting, and cinematography with hands-on studio training in Whitefield, Bengaluru.</description>
+      <focusKeywords>photography classes near me, photography workshop whitefield bangalore</focusKeywords>
+    </page>
+    <page url="https://trixietales.com/contact" priority="0.95">
+      <title>Contact Trixietales Studio | Photography Near Me Studio in Belathur, Whitefield</title>
+      <description>Visit Trixietales Photography &amp; Films at Belathur, Whitefield, Bengaluru 560067 or book your photoshoot session online.</description>
+      <focusKeywords>photography near me studio, best studio in whitefield bangalore, photo studio contact whitefield</focusKeywords>
+    </page>
+  </pages>
+</seoConfig>
+

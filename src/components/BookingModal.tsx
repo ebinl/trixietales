@@ -69,7 +69,7 @@ const DEFAULT_SERVICES: Service[] = [
     name: "Grand Wedding Film & Photography",
     description: "Complete cinematic 4K multi-camera coverage, candid portraiture, drone cinematography, and heirloom album.",
     price: "₹1,80,000",
-    imageUrl: "/banner/1.jpeg",
+    imageUrl: "/banner/DSC09578.jpeg",
     duration: "Full Wedding (2-3 Days)",
   },
   {
@@ -77,7 +77,7 @@ const DEFAULT_SERVICES: Service[] = [
     name: "Pre-Wedding Cinematic Reel",
     description: "Exotic location shoot with Markhandeya, concept storytelling, high-fashion styling, and teaser reel.",
     price: "₹65,000",
-    imageUrl: "/banner/2.jpeg",
+    imageUrl: "/banner/Sunset_Silhouette.jpeg",
     duration: "1 Full Day Shoot",
   },
   {
@@ -85,7 +85,7 @@ const DEFAULT_SERVICES: Service[] = [
     name: "Intimate Wedding & Engagement",
     description: "Heartfelt documentary coverage, family portraits, color-graded cinematic highlight film.",
     price: "₹85,000",
-    imageUrl: "/banner/3.jpeg",
+    imageUrl: "/banner/Balcony_Romance.jpeg",
     duration: "1 Day Coverage",
   },
   {
@@ -93,7 +93,7 @@ const DEFAULT_SERVICES: Service[] = [
     name: "Editorial Portrait & Fashion",
     description: "Studio or outdoor conceptual portraiture, magazine-style color grading, and retouched master files.",
     price: "₹45,000",
-    imageUrl: "/banner/4.jpeg",
+    imageUrl: "/banner/DSC00885.jpeg",
     duration: "Half Day Shoot",
   },
 ];
