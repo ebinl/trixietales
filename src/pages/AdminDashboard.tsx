@@ -121,27 +121,43 @@ interface BannerItem {
 
 const DEFAULT_BANNERS = [
   {
-    url: "/banner/DSC00885.jpeg",
-    title: "Sunset Architectural Silhouette",
-    subtitle: "Golden Hour Whispers Amidst Ancient Heritage",
-    location: "Heritage Sanctuaries",
+    url: "/banner/Balcony_Romance.jpeg",
+    title: "Palace Arch Romance",
+    subtitle: "A Celebration of Love, Poise & Pure Joy",
+    location: "Heritage Estate",
     order: 1,
     isActive: true,
   },
   {
-    url: "/banner/DSC09612.jpeg",
-    title: "Palace Arch Romance",
-    subtitle: "A Celebration of Love, Poise & Pure Joy",
-    location: "Heritage Estate",
+    url: "/banner/Sunset_Silhouette.jpeg",
+    title: "Sunset Architectural Silhouette",
+    subtitle: "Golden Hour Whispers Amidst Ancient Heritage",
+    location: "Heritage Sanctuaries",
     order: 2,
     isActive: true,
   },
   {
     url: "/banner/DSC09578.jpeg",
     title: "Grand Colonnade Elegance",
-    subtitle: "Where Architecture Meets Timeless Romance",
+    subtitle: "Where Tradition Meets Timeless Romance",
     location: "Bengaluru Palace",
     order: 3,
+    isActive: true,
+  },
+  {
+    url: "/banner/DSC09612.jpeg",
+    title: "Intimate Bridal Gaze",
+    subtitle: "Stolen Glances Under the Sacred Veil",
+    location: "Royal Mandapam",
+    order: 4,
+    isActive: true,
+  },
+  {
+    url: "/banner/DSC00885.jpeg",
+    title: "Golden Dunes Odyssey",
+    subtitle: "Timeless Horizons & Pre-Wedding Stories",
+    location: "Desert Sanctuary",
+    order: 5,
     isActive: true,
   },
   {
@@ -149,7 +165,7 @@ const DEFAULT_BANNERS = [
     title: "Sacred Mangalsutra Heirloom",
     subtitle: "Intimate Rituals & Heritage Traditions",
     location: "Vedic Sanctuaries",
-    order: 4,
+    order: 6,
     isActive: true,
   },
   {
@@ -157,7 +173,7 @@ const DEFAULT_BANNERS = [
     title: "Joyous Sacred Vows",
     subtitle: "Shower of Blessings, Forever Treasured",
     location: "Royal Pavilion",
-    order: 5,
+    order: 7,
     isActive: true,
   },
 ];
@@ -203,7 +219,7 @@ const galleryCategories = [
   "Get togethers",
   "Birthdays",
   "Naming ceremonies",
-  "Corporote shoots",
+  "Corporate shoots",
   "Product Shoots",
   "Industrial Photography and Films",
   "Baby shower",
@@ -1383,7 +1399,7 @@ const AdminDashboard = () => {
                     </div>
                     <h3 className="text-xl font-bold">No Custom Banner Photos In Firestore</h3>
                     <p className="text-sm text-muted-foreground max-w-md mt-1 mb-6">
-                      The homepage is currently displaying the default curated 4K photo showcase. You can add custom photos or populate Firestore with the 5 curated defaults to manage and reorder them.
+                      The homepage is currently displaying the default curated 4K photo showcase. You can add custom photos or populate Firestore with the 7 curated defaults to manage and reorder them.
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-3">
                       <Button

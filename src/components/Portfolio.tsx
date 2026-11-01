@@ -43,6 +43,7 @@ import { collection, query, onSnapshot, orderBy } from "firebase/firestore";
 const galleryData = {
   Wedding: {
     images: [
+      "/images/protfolio images/Wedding/Balcony_Romance.jpeg",
       "/images/protfolio images/Wedding/ANZ03064_Conv.webp",
       "/images/protfolio images/Wedding/ANZ03129_Conv.webp",
       "/images/protfolio images/Wedding/ANZ03160_Conv.webp",
@@ -87,6 +88,7 @@ const galleryData = {
   },
   "Pre wedding": {
     images: [
+      "/images/protfolio images/Pre-Wedding/Sunset_Silhouette.jpeg",
       "/images/protfolio images/Pre-Wedding/DSC00047_Conv.webp",
       "/images/protfolio images/Pre-Wedding/DSC00075_Conv.webp",
       "/images/protfolio images/Pre-Wedding/DSC00225_Conv.webp",
@@ -301,7 +303,7 @@ const galleryData = {
     ],
     videos: [],
   },
-  "Corporote shoots": {
+  "Corporate shoots": {
     images: [],
     videos: [],
   },
@@ -465,7 +467,7 @@ const services = [
   { icon: Users, title: "Get togethers", category: "Get togethers", video: "/gif/stories.mp4" },
   { icon: Cake, title: "Birthdays", category: "Birthdays", video: "/gif/birthday.mp4" },
   { icon: Baby, title: "Naming ceremonies", category: "Naming ceremonies", video: "/gif/anna.mp4" },
-  { icon: Briefcase, title: "Corporote shoots", category: "Corporote shoots", video: "/gif/concert.mp4" },
+  { icon: Briefcase, title: "Corporate Shoots", category: "Corporate shoots", video: "/gif/concert.mp4" },
   { icon: Package, title: "Product Shoots", category: "Product Shoots", video: "/gif/concert.mp4" },
   { icon: Building2, title: "Industrial Photography", category: "Industrial Photography and Films", video: "/gif/concert.mp4" },
   { icon: Baby, title: "Baby shower", category: "Baby shower", video: "/gif/maternity.mp4" },

@@ -25,27 +25,43 @@ export interface BannerImage {
 
 export const defaultBannerImages: BannerImage[] = [
   {
-    url: "/banner/DSC00885.jpeg",
-    title: "Sunset Architectural Silhouette",
-    subtitle: "Golden Hour Whispers Amidst Ancient Heritage",
-    location: "Heritage Sanctuaries",
+    url: "/banner/Balcony_Romance.jpeg",
+    title: "Palace Arch Romance",
+    subtitle: "A Celebration of Love, Poise & Pure Joy",
+    location: "Heritage Estate",
     order: 1,
     isActive: true,
   },
   {
-    url: "/banner/DSC09612.jpeg",
-    title: "Palace Arch Romance",
-    subtitle: "A Celebration of Love, Poise & Pure Joy",
-    location: "Heritage Estate",
+    url: "/banner/Sunset_Silhouette.jpeg",
+    title: "Sunset Architectural Silhouette",
+    subtitle: "Golden Hour Whispers Amidst Ancient Heritage",
+    location: "Heritage Sanctuaries",
     order: 2,
     isActive: true,
   },
   {
     url: "/banner/DSC09578.jpeg",
     title: "Grand Colonnade Elegance",
-    subtitle: "Where Architecture Meets Timeless Romance",
+    subtitle: "Where Tradition Meets Timeless Romance",
     location: "Bengaluru Palace",
     order: 3,
+    isActive: true,
+  },
+  {
+    url: "/banner/DSC09612.jpeg",
+    title: "Intimate Bridal Gaze",
+    subtitle: "Stolen Glances Under the Sacred Veil",
+    location: "Royal Mandapam",
+    order: 4,
+    isActive: true,
+  },
+  {
+    url: "/banner/DSC00885.jpeg",
+    title: "Golden Dunes Odyssey",
+    subtitle: "Timeless Horizons & Pre-Wedding Stories",
+    location: "Desert Sanctuary",
+    order: 5,
     isActive: true,
   },
   {
@@ -53,7 +69,7 @@ export const defaultBannerImages: BannerImage[] = [
     title: "Sacred Mangalsutra Heirloom",
     subtitle: "Intimate Rituals & Heritage Traditions",
     location: "Vedic Sanctuaries",
-    order: 4,
+    order: 6,
     isActive: true,
   },
   {
@@ -61,7 +77,7 @@ export const defaultBannerImages: BannerImage[] = [
     title: "Joyous Sacred Vows",
     subtitle: "Shower of Blessings, Forever Treasured",
     location: "Royal Pavilion",
-    order: 5,
+    order: 7,
     isActive: true,
   },
 ];
@@ -124,10 +140,19 @@ export const HeroCarousel = () => {
         q,
         (snapshot) => {
           if (!snapshot.empty) {
-            const loaded: BannerImage[] = [];
+            const removedUrls = new Set(["/banner/1.jpeg", "/banner/2.jpeg", "/banner/3.jpeg"]);
+            const loaded: BannerImage[] = [...defaultBannerImages];
+            const existingUrls = new Set(loaded.map((img) => img.url));
+
             snapshot.forEach((doc) => {
               const data = doc.data();
-              if (data.isActive !== false) {
+              if (
+                data.isActive !== false &&
+                data.url &&
+                !removedUrls.has(data.url) &&
+                !existingUrls.has(data.url)
+              ) {
+                existingUrls.add(data.url);
                 loaded.push({
                   id: doc.id,
                   url: data.url,
@@ -139,10 +164,8 @@ export const HeroCarousel = () => {
                 });
               }
             });
-            if (loaded.length > 0) {
-              setImages(loaded);
-              return;
-            }
+            setImages(loaded);
+            return;
           }
           setImages(defaultBannerImages);
         },
